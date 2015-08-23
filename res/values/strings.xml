@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">iRent</string>
+    <string name="title_activity_main">爱租房</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_search">搜索</string>
+    <string name="action_add_contact">添加租客</string>
+    <string name="action_settings">设置</string>
+    <string name="action_about">关于</string>
+    <string name="label_renter_room_no">租客房号</string>
+    <string name="label_renter_name">租客姓名</string>
+    <string name="label_renter_phone_no">租客电话</string>
+    <string name="label_renter_remark">备注</string>
+    <string name="label_rent_start_date">起租日</string>
+    <string name="label_rent_end_date">到期日</string>
+    <string name="label_rent_price">租金</string>
+    <string name="label_rent_deposit">定金</string>
+    <string name="button_add_contact">保存</string>
+    <string name="button_call">拨打</string>
+
+    <!-- 主界面 -->
+    <!-- for accessibility -->
+    <string name="main_default_porait">默认头像</string>
+    <string name="main_duedate_pre">到期日:</string>
+    <string name="tips_renterphoneno">到期日:</string>
+    <!-- main -->
+    <string name="tips_underconstrutction">正在开发中，请耐心等待。。</string>
+    <!-- list -->
+    <string name="main_list_context_delete">删除租客信息</string>
+    <string name="tips_list_delete_succeed">删除成功</string>
+    <string name="tips_list_delete_fail">删除失败</string>
+
+    <!-- 添加通讯录 -->
+	<string name="title_activity_add_contact">添加租客信息</string>
+    <string name="title_activity_edit_contact">编辑租客信息</string>
+    <string name="title_addcontact_call">拨打电话</string>
+    <string name="confirm_addcontact_calldialog_positive">拨打</string>
+    <string name="confirm_addcontact_calldialog_negtive">取消</string>
+    <string name="tips_roomno_empty">房间号不能为空</string>
+    <string name="tips_roomno_invalid">房间号格式错误</string>
+    <string name="tips_rentername_empty">姓名不能为空</string>
+    <string name="tips_renterphoneno_empty">电话不能为空</string>
+    <string name="tips_renterphoneno_invalid">电话格式错误</string>
+    <string name="tips_rentstartdate_empty">起租日不能为空</string>
+    <string name="tips_rentenddate_empty">到期日不能为空</string>
+    <string name="tips_rentprice_empty">租金不能为空</string>
+    <string name="tips_rentprice_invalid">租金格式错误</string>
+    <string name="tips_rentdeposit_empty">定金不能为空</string>
+    <string name="tips_rentdeposit_invalid">定金格式错误</string>
+    <string name="tips_room_rent">房间号已存在</string>
+    <string name="tips_store_exception">存储数据出错，请重新保存</string>
+    <string name="tips_saved">保存成功</string>
+    
+    <!-- 关于 -->
+    <string name="title_activity_about">关于这个程序</string>
+    <string name="about_content1">To my best love</string>
+    <string name="about_content2">--Sophia</string>
+    
+    <!-- 通知 -->
+	<string name="notify_ticker">有即将到达租期的房间需要您关注！</string>
+	<string name="notify_title">来自爱租房的消息</string>
+	<string name="notify_content_template">{names}的房间要到期了</string>
+</resources>

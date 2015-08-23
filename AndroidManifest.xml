@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zdjray.irent"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_home"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.zdjray.irent.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AppCompat" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zdjray.irent.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.zdjray.irent.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zdjray.irent.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.zdjray.irent.AddContactActivity"
+            android:label="@string/title_activity_add_contact"
+            android:parentActivityName="com.zdjray.irent.MainActivity"
+            android:theme="@style/Theme.AppCompat" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zdjray.irent.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.zdjray.irent.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <receiver 
+            android:exported="false"
+            android:name=".biz.RentAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.zdjray.irent.CLOCK"></action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

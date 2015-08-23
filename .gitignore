@@ -1,0 +1,10 @@
+.settings/
+bin/
+gen/
+assets/
+ant.properties
+build.xml
+lint.xml
+local.properties
+project.properties
+proguard-project.txt
